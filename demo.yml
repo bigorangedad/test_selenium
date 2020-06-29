@@ -1,0 +1,23 @@
+#- public
+#- private
+- b: 123
+- a: 1
+- c:
+    d: 4
+    e: 5
+-
+  str1: "string string1 string2"
+  int1: 10
+  float1: 3.14
+  bool1: true
+  bool2: false
+  none1: ~
+  datetime1: 2020-06-06
+  int2: !!str 20
+- default1: &def1
+    a: 1
+    b: 2
+- develop:
+    a1: 3
+  <<: *def1
+
